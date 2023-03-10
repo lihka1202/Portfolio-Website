@@ -1,0 +1,18 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:flutter/material.dart';
+import 'package:responsive_builder/responsive_builder.dart';
+
+import 'package:portfolio_website/Project/ProjectDesktopView.dart';
+import 'package:portfolio_website/Project/ProjectMobileView.dart';
+
+class ProjectView extends StatelessWidget {
+  const ProjectView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ResponsiveBuilder(builder: (_, size) {
+      if (size.isMobile) return ProjectMobileView();
+      return ProjectDesktopView();
+    });
+  }
+}

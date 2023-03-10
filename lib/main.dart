@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/Header/HeaderView.dart';
+import 'package:portfolio_website/Project/ProjectView.dart';
 import 'package:portfolio_website/navbar/NavigationBar.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
@@ -41,10 +42,11 @@ class _PortfolioViewState extends State<PortfolioView> {
         child: Column(children: [
           const NavigationBarView(),
           HeaderView(height: height, width: width),
+          const ProjectView(),
           Container(
             height: height,
             width: width,
-            color: Colors.green,
+            color: Colors.black,
           ),
         ]),
       ),

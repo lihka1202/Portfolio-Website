@@ -88,7 +88,7 @@ class NavBarItem extends StatelessWidget {
           style: GoogleFonts.montserrat(
               textStyle: TextStyle(
                   color: Colors.white,
-                  fontSize: MediaQuery.of(context).size.width < 655 ? 17 : 24)),
+                  fontSize: MediaQuery.of(context).size.width < 690 ? 17 : 24)),
         ),
       ),
     );
