@@ -8,13 +8,9 @@ class ProjectItemCard extends StatelessWidget {
   const ProjectItemCard({
     super.key,
     required this.item,
-    required this.designHeight,
-    required this.designWidth,
   });
 
   final ProjectItems item;
-  final double designHeight;
-  final double designWidth;
 
   @override
   Widget build(BuildContext context) {
@@ -35,21 +31,16 @@ class ProjectItemCard extends StatelessWidget {
           // add expandable panel here?
           Text(
             item.title,
-            style: TextStyle(
-                color: Colors.white,
-                fontSize: (area / (designHeight * designWidth)) * 30),
+            style: TextStyle(color: Colors.white, fontSize: 30),
           ),
           const SizedBox(
             height: 10,
           ),
           Padding(
-            padding: EdgeInsets.only(
-                right: (area / (designHeight * designWidth)) * 14.0),
+            padding: EdgeInsets.only(right: 14.0),
             child: Text(
               item.description,
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: (area / (designHeight * designWidth)) * 20),
+              style: TextStyle(color: Colors.white, fontSize: 20),
             ),
           ),
 
@@ -61,14 +52,12 @@ class ProjectItemCard extends StatelessWidget {
             children: [
               for (final chipGenerator in item.techStacks)
                 Padding(
-                  padding: EdgeInsets.only(
-                      right: (area / (designHeight * designWidth)) * 8.0),
+                  padding: EdgeInsets.only(right: 8.0),
                   child: Chip(
                     label: Text(
                       chipGenerator,
                       style: GoogleFonts.electrolize(
-                          color: Colors.white,
-                          fontSize: (area / (designHeight * designWidth)) * 17),
+                          color: Colors.white, fontSize: 17),
                     ),
                     backgroundColor: Colors.deepOrange,
                   ),
@@ -80,17 +69,14 @@ class ProjectItemCard extends StatelessWidget {
                   label: Text(
                     "Github",
                     style: GoogleFonts.electrolize(
-                        color: Colors.white,
-                        fontSize: (area / (designHeight * designWidth)) * 17),
+                        color: Colors.white, fontSize: 17),
                   ),
                   style: OutlinedButton.styleFrom(
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(
-                              (area / (designHeight * designWidth)) * 10))),
+                          borderRadius: BorderRadius.all(Radius.circular(10))),
                       backgroundColor: Colors.black,
-                      side: BorderSide(
-                          color: Colors.deepOrangeAccent,
-                          width: (area / (designHeight * designWidth)) * 2)),
+                      side:
+                          BorderSide(color: Colors.deepOrangeAccent, width: 2)),
                 )
             ],
           )
