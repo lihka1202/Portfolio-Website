@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio_website/Constants.dart';
+import 'package:portfolio_website/Project/ProjectItemCard.dart';
 import "package:simple_icons/simple_icons.dart";
 
-class ProjectDesktopView extends StatelessWidget {
-  const ProjectDesktopView({super.key});
+class ProjectDesktopView1 extends StatelessWidget {
+  const ProjectDesktopView1({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,68 +28,22 @@ class ProjectDesktopView extends StatelessWidget {
             ],
             totalRepeatCount: 1000,
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Row(
+            //! Was supposed to be row with cross axis alignment.start, wrap should default
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              for (var item in kItems)
+              for (var item in kItems1)
                 Expanded(
-                    child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Image.asset(item.image),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    Text(
-                      item.title,
-                      style: const TextStyle(color: Colors.white, fontSize: 30),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 14.0),
-                      child: Text(
-                        item.description,
-                        style:
-                            const TextStyle(color: Colors.white, fontSize: 20),
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    Wrap(
-                      runSpacing: 10,
-                      children: [
-                        for (final item in item.techStacks)
-                          Padding(
-                            padding: const EdgeInsets.only(right: 8.0),
-                            child: Chip(label: Text(item)),
-                          ),
-                        OutlinedButton.icon(
-                          onPressed: () {},
-                          icon: const FaIcon(FontAwesomeIcons.github),
-                          label: const Text(
-                            "Github",
-                            style: TextStyle(color: Colors.white),
-                          ),
-                          style: OutlinedButton.styleFrom(
-                              shape: const RoundedRectangleBorder(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(10))),
-                              backgroundColor: Colors.black,
-                              side: const BorderSide(
-                                  color: Colors.deepOrange, width: 2)),
-                        )
-                      ],
-                    )
-                  ],
+                    child: ProjectItemCard(
+                  item: item,
+                  designHeight: 1854,
+                  designWidth: 980,
                 )),
             ],
-          )
+          ),
         ],
       ),
     );

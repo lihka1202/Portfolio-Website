@@ -32,7 +32,11 @@ class HeaderView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Expanded(
-                  child: HeaderBody(),
+                  child: HeaderBody(
+                    wid: 70,
+                    buttonWid: 30,
+                    subtitleWid: 34,
+                  ),
                 ),
                 Image.asset(
                   "images/picture.png",
@@ -49,8 +53,15 @@ class HeaderView extends StatelessWidget {
 
 class HeaderBody extends StatelessWidget {
   const HeaderBody({
+    required this.wid,
+    required this.buttonWid,
+    required this.subtitleWid,
     super.key,
   });
+
+  final num wid;
+  final double buttonWid;
+  final double subtitleWid;
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +73,7 @@ class HeaderBody extends StatelessWidget {
         AutoSizeText(
           "I'm a",
           style: GoogleFonts.openSans(
-              fontSize: (width / kInitWidth) * 70,
+              fontSize: (width / kInitWidth) * wid,
               textStyle: const TextStyle(color: Colors.red)),
           maxLines: 1,
         ),
@@ -73,27 +84,27 @@ class HeaderBody extends StatelessWidget {
             TyperAnimatedText("Thinker",
                 textStyle: TextStyle(
                     color: Colors.orange,
-                    fontSize: (width / kInitWidth) * 70,
+                    fontSize: (width / kInitWidth) * wid,
                     fontWeight: FontWeight.bold)),
             TyperAnimatedText("Student",
                 textStyle: TextStyle(
                     color: Colors.yellow,
-                    fontSize: (width / kInitWidth) * 70,
+                    fontSize: (width / kInitWidth) * wid,
                     fontWeight: FontWeight.bold)),
             TyperAnimatedText("Dreamer",
                 textStyle: TextStyle(
                     color: Colors.green,
-                    fontSize: (width / kInitWidth) * 70,
+                    fontSize: (width / kInitWidth) * wid,
                     fontWeight: FontWeight.bold)),
             TyperAnimatedText("Developer",
                 textStyle: TextStyle(
                     color: Colors.lightBlue,
-                    fontSize: (width / kInitWidth) * 70,
+                    fontSize: (width / kInitWidth) * wid,
                     fontWeight: FontWeight.bold)),
             TyperAnimatedText("Engineer",
                 textStyle: TextStyle(
                     color: Colors.white,
-                    fontSize: (width / kInitWidth) * 70,
+                    fontSize: (width / kInitWidth) * wid,
                     fontWeight: FontWeight.bold)),
           ],
           totalRepeatCount: 1000,
@@ -103,9 +114,9 @@ class HeaderBody extends StatelessWidget {
         ),
         AutoSizeText(
           "I'm looking for new opportunities \nto broaden my horizon and sharpen my skillsets!",
-          maxLines: 2,
+          maxLines: 3,
           style: GoogleFonts.dmSans(
-              textStyle: const TextStyle(color: Colors.red, fontSize: 34)),
+              textStyle: TextStyle(color: Colors.red, fontSize: subtitleWid)),
         ),
         const SizedBox(
           height: 25,
@@ -116,10 +127,11 @@ class HeaderBody extends StatelessWidget {
           hoverColor: Colors.red,
           onPressed: () {},
           label: const AutoSizeText(
-            "Contact me",
+            "Contact me!",
             maxLines: 1,
           ),
-          extendedTextStyle: const TextStyle(fontSize: 30),
+          extendedTextStyle: GoogleFonts.electrolize(
+              fontSize: (width / kInitWidth) * buttonWid),
         )
       ],
     );
@@ -146,8 +158,12 @@ class HeaderMobileView extends StatelessWidget {
               child: Image.asset(
             "images/picture.png",
           )),
-          HeaderBody(),
-          SizedBox(
+          const HeaderBody(
+            wid: 170,
+            buttonWid: 70,
+            subtitleWid: 70,
+          ), //^ Set up a separate height classifier for the text and ensure that teh quality of the text is alright
+          const SizedBox(
             height: 10,
           )
         ],

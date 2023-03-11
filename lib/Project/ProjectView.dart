@@ -5,14 +5,14 @@ import 'package:responsive_builder/responsive_builder.dart';
 import 'package:portfolio_website/Project/ProjectDesktopView.dart';
 import 'package:portfolio_website/Project/ProjectMobileView.dart';
 
-class ProjectView extends StatelessWidget {
-  const ProjectView({super.key});
+class ProjectView1 extends StatelessWidget {
+  const ProjectView1({super.key});
 
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(builder: (_, size) {
-      if (size.isMobile) return ProjectMobileView();
-      return ProjectDesktopView();
+      if (size.isMobile) return ProjectMobileView1();
+      return ProjectDesktopView1();
     });
   }
 }
