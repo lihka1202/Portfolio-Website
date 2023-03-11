@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio_website/Constants.dart';
 import "package:simple_icons/simple_icons.dart";
 
@@ -25,6 +26,9 @@ class ProjectDesktopView extends StatelessWidget {
                       fontWeight: FontWeight.bold))
             ],
             totalRepeatCount: 1000,
+          ),
+          SizedBox(
+            height: 20,
           ),
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -53,7 +57,7 @@ class ProjectDesktopView extends StatelessWidget {
                             const TextStyle(color: Colors.white, fontSize: 20),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Wrap(
@@ -66,17 +70,17 @@ class ProjectDesktopView extends StatelessWidget {
                           ),
                         OutlinedButton.icon(
                           onPressed: () {},
-                          icon: Icon(Icons.generating_tokens),
-                          label: Text(
+                          icon: const FaIcon(FontAwesomeIcons.github),
+                          label: const Text(
                             "Github",
                             style: TextStyle(color: Colors.white),
                           ),
                           style: OutlinedButton.styleFrom(
-                              shape: RoundedRectangleBorder(
+                              shape: const RoundedRectangleBorder(
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(10))),
                               backgroundColor: Colors.black,
-                              side: BorderSide(
+                              side: const BorderSide(
                                   color: Colors.deepOrange, width: 2)),
                         )
                       ],

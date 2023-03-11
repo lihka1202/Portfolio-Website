@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:portfolio_website/Constants.dart';
 
 class HeaderView extends StatelessWidget {
   const HeaderView({
@@ -53,6 +54,7 @@ class HeaderBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -60,7 +62,8 @@ class HeaderBody extends StatelessWidget {
         AutoSizeText(
           "I'm a",
           style: GoogleFonts.openSans(
-              fontSize: 70, textStyle: const TextStyle(color: Colors.red)),
+              fontSize: (width / kInitWidth) * 70,
+              textStyle: const TextStyle(color: Colors.red)),
           maxLines: 1,
         ),
 
@@ -68,29 +71,29 @@ class HeaderBody extends StatelessWidget {
         AnimatedTextKit(
           animatedTexts: [
             TyperAnimatedText("Thinker",
-                textStyle: const TextStyle(
+                textStyle: TextStyle(
                     color: Colors.orange,
-                    fontSize: 70,
+                    fontSize: (width / kInitWidth) * 70,
                     fontWeight: FontWeight.bold)),
             TyperAnimatedText("Student",
-                textStyle: const TextStyle(
+                textStyle: TextStyle(
                     color: Colors.yellow,
-                    fontSize: 70,
+                    fontSize: (width / kInitWidth) * 70,
                     fontWeight: FontWeight.bold)),
             TyperAnimatedText("Dreamer",
-                textStyle: const TextStyle(
+                textStyle: TextStyle(
                     color: Colors.green,
-                    fontSize: 70,
+                    fontSize: (width / kInitWidth) * 70,
                     fontWeight: FontWeight.bold)),
             TyperAnimatedText("Developer",
-                textStyle: const TextStyle(
+                textStyle: TextStyle(
                     color: Colors.lightBlue,
-                    fontSize: 70,
+                    fontSize: (width / kInitWidth) * 70,
                     fontWeight: FontWeight.bold)),
             TyperAnimatedText("Engineer",
-                textStyle: const TextStyle(
+                textStyle: TextStyle(
                     color: Colors.white,
-                    fontSize: 70,
+                    fontSize: (width / kInitWidth) * 70,
                     fontWeight: FontWeight.bold)),
           ],
           totalRepeatCount: 1000,
