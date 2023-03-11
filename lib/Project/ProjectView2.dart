@@ -8,7 +8,7 @@ class ProjectView2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ResponsiveBuilder(builder: (_, size) {
+    return ResponsiveBuilder(builder: (context, size) {
       if (size.isMobile) return const ProjectMobileView2();
       return const ProjectDesktopView2();
     });

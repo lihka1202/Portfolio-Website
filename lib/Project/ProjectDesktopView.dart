@@ -39,8 +39,6 @@ class ProjectDesktopView1 extends StatelessWidget {
                 Expanded(
                     child: ProjectItemCard(
                   item: item,
-                  designHeight: 1854,
-                  designWidth: 980,
                 )),
             ],
           ),
