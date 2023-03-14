@@ -73,7 +73,7 @@ class ProjectItemRow extends StatelessWidget {
                     side: BorderSide(color: Colors.deepOrangeAccent, width: 2)),
               )
           ],
-        )
+        ),
       ],
     );
   }
