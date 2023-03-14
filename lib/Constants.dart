@@ -164,6 +164,19 @@ final kprogrammingLanguageSkillList = [
             color: Colors.green,
           ),
           borderRadius: BorderRadius.all(Radius.circular(30)))),
+  SkillsDesktopItem(
+      messageTooltip: "Dart",
+      imageLocation: "images/dart.png",
+      boxDecoration: BoxDecoration(
+          //color: Colors.grey,
+          gradient: LinearGradient(
+              colors: [Colors.blue, Colors.green, Colors.yellow],
+              tileMode: TileMode.mirror),
+          //color: Colors.grey,
+          border: Border.all(
+            color: Colors.green,
+          ),
+          borderRadius: BorderRadius.all(Radius.circular(30)))),
 ];
 
 final kFrameWorkList = [
@@ -514,6 +527,19 @@ final kprogrammingLanguageSkillMobileList = [
   SkillsMobileItem(
       messageTooltip: "Verilog",
       imageLocation: "images/verilog.png",
+      boxDecoration: BoxDecoration(
+          //color: Colors.grey,
+          gradient: LinearGradient(
+              colors: [Colors.blue, Colors.green, Colors.yellow],
+              tileMode: TileMode.mirror),
+          //color: Colors.grey,
+          border: Border.all(
+            color: Colors.green,
+          ),
+          borderRadius: BorderRadius.all(Radius.circular(30)))),
+  SkillsMobileItem(
+      messageTooltip: "Dart",
+      imageLocation: "images/dart.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
           gradient: LinearGradient(

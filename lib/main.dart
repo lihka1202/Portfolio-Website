@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_website/Experience/ExperienceView.dart';
 import 'package:portfolio_website/Header/HeaderView.dart';
 import 'package:portfolio_website/Project/ProjectView.dart';
 import 'package:portfolio_website/Project/ProjectView2.dart';
@@ -47,6 +48,7 @@ class _PortfolioViewState extends State<PortfolioView> {
           const ProjectView1(),
           const ProjectView2(),
           const SkillsView(),
+          const ExperienceView(),
         ]),
       ),
     );
