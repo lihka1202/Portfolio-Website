@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_website/Header/HeaderView.dart';
 import 'package:portfolio_website/Project/ProjectView.dart';
 import 'package:portfolio_website/Project/ProjectView2.dart';
+import 'package:portfolio_website/Skills/Skills_View.dart';
 import 'package:portfolio_website/navbar/NavigationBar.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
@@ -45,11 +46,7 @@ class _PortfolioViewState extends State<PortfolioView> {
           HeaderView(height: height, width: width),
           const ProjectView1(),
           const ProjectView2(),
-          Container(
-            height: height,
-            width: width,
-            color: Colors.black,
-          ),
+          const SkillsView(),
         ]),
       ),
     );

@@ -79,7 +79,7 @@ class ProjectItemCard extends StatelessWidget {
                           BorderSide(color: Colors.deepOrangeAccent, width: 2)),
                 )
             ],
-          )
+          ),
         ],
       ),
     );
