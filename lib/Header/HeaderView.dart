@@ -113,7 +113,7 @@ class HeaderBody extends StatelessWidget {
           height: 30,
         ),
         AutoSizeText(
-          "I'm looking for new opportunities \nto broaden my horizon and sharpen my skillsets!",
+          "I'm looking for new opportunities \nto learn and tinker!",
           maxLines: 3,
           style: GoogleFonts.dmSans(
               textStyle: TextStyle(color: Colors.red, fontSize: subtitleWid)),
@@ -161,7 +161,7 @@ class HeaderMobileView extends StatelessWidget {
           const HeaderBody(
             wid: 170,
             buttonWid: 70,
-            subtitleWid: 70,
+            subtitleWid: 30,
           ), //^ Set up a separate height classifier for the text and ensure that teh quality of the text is alright
           const SizedBox(
             height: 10,

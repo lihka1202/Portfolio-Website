@@ -15,7 +15,7 @@ class SkillsMobileView extends StatelessWidget {
     double Width = width;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20),
-      height: Height * 2.2,
+      height: Height < 844 ? Height * 2.1 : Height * 1.7,
       width: MediaQuery.of(context).size.width,
       color: Colors.black,
       child: Column(

@@ -1,5 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+import 'package:portfolio_website/Experience/ExperienceDesktopItem.dart';
 import 'package:portfolio_website/Skills/SkillDesktopItem.dart';
 import 'package:portfolio_website/Skills/SkillsMobileItem.dart';
 
@@ -26,157 +27,157 @@ final kprogrammingLanguageSkillList = [
       imageLocation: "images/c-.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "JavaScript",
       imageLocation: "images/java-script.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.repeated),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Java",
       imageLocation: "images/java.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.repeated),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Python",
       imageLocation: "images/python.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.repeated),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Swift",
       imageLocation: "images/swift.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.repeated),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "SQL",
       imageLocation: "images/sql-server.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Matlab",
       imageLocation: "images/icons8-matlab-128.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "GoLang",
       imageLocation: "images/golang.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "HTML",
       imageLocation: "images/html.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Bash",
       imageLocation: "images/bash.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Verilog",
       imageLocation: "images/verilog.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Dart",
       imageLocation: "images/dart.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
 ];
 
 final kFrameWorkList = [
@@ -185,105 +186,105 @@ final kFrameWorkList = [
       imageLocation: "images/atom.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "MongoDB",
       imageLocation: "images/leaf.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Express.JS",
       imageLocation: "images/expressjs.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Node.JS",
       imageLocation: "images/nodejs.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Flutter",
       imageLocation: "images/flutterlogo.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "ROS",
       imageLocation: "images/ros.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Open CV",
       imageLocation: "images/opencv.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "SpringBoot",
       imageLocation: "images/springboot.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
 ];
 
 final kOtherSoftwares = [
@@ -292,105 +293,105 @@ final kOtherSoftwares = [
       imageLocation: "images/linux.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Latex",
       imageLocation: "images/latex.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Jira",
       imageLocation: "images/jira.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Firebase",
       imageLocation: "images/firebase.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Arduino",
       imageLocation: "images/arduino.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Git",
       imageLocation: "images/git.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Markdown",
       imageLocation: "images/markdown.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsDesktopItem(
       messageTooltip: "Obsidian",
       imageLocation: "images/obsidian.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
 ];
 
 final kprogrammingLanguageSkillMobileList = [
@@ -399,157 +400,157 @@ final kprogrammingLanguageSkillMobileList = [
       imageLocation: "images/c-.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "JavaScript",
       imageLocation: "images/java-script.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.repeated),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Java",
       imageLocation: "images/java.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.repeated),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Python",
       imageLocation: "images/python.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.repeated),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Swift",
       imageLocation: "images/swift.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.repeated),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "SQL",
       imageLocation: "images/sql-server.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Matlab",
       imageLocation: "images/icons8-matlab-128.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "GoLang",
       imageLocation: "images/golang.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "HTML",
       imageLocation: "images/html.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Bash",
       imageLocation: "images/bash.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Verilog",
       imageLocation: "images/verilog.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Dart",
       imageLocation: "images/dart.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.blue, Colors.green, Colors.yellow],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
 ];
 
 final kFrameWorkMobileList = [
@@ -558,105 +559,105 @@ final kFrameWorkMobileList = [
       imageLocation: "images/atom.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "MongoDB",
       imageLocation: "images/leaf.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Express.JS",
       imageLocation: "images/expressjs.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Node.JS",
       imageLocation: "images/nodejs.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Flutter",
       imageLocation: "images/flutterlogo.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "ROS",
       imageLocation: "images/ros.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Open CV",
       imageLocation: "images/opencv.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "SpringBoot",
       imageLocation: "images/springboot.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.orange, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
 ];
 
 final kOtherMobileSoftwares = [
@@ -665,105 +666,105 @@ final kOtherMobileSoftwares = [
       imageLocation: "images/linux.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Latex",
       imageLocation: "images/latex.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Jira",
       imageLocation: "images/jira.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Firebase",
       imageLocation: "images/firebase.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Arduino",
       imageLocation: "images/arduino.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Git",
       imageLocation: "images/git.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Markdown",
       imageLocation: "images/markdown.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
   SkillsMobileItem(
       messageTooltip: "Obsidian",
       imageLocation: "images/obsidian.png",
       boxDecoration: BoxDecoration(
           //color: Colors.grey,
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
               colors: [Colors.pinkAccent, Colors.yellowAccent],
               tileMode: TileMode.mirror),
           //color: Colors.grey,
           border: Border.all(
             color: Colors.green,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(30)))),
+          borderRadius: const BorderRadius.all(Radius.circular(30)))),
 ];
 final kItems1 = [
   ProjectItems(
@@ -828,4 +829,51 @@ final kItems2 = [
         "FPGA Circuit Design",
       ],
       github: true),
+];
+
+final kExperienceDesktopItems = [
+  const ExperienceDesktopItem(
+    imageLocation: "images/followtrade_375x350.png",
+    nameOfInternship: "Software Engineering Intern",
+    durationOfInternship: "December 2022 - March 2023",
+    informationOfInternship:
+        "- Worked on transitioning the web app from REACT to Flutter, while ensuring that the backend was functional on the Spring Framework.\n\n" +
+            "- Developed a paradigm to integrate FollowTrade's web app with a specific set of brokers by making use various REST APIs.\n\n" +
+            "- Prototyped a functional version of the web app which was able to fetch market data and also open or close positions for specific users and stocks.",
+    testimonialExists: true,
+    gradientChoices: [Colors.green, Colors.yellow],
+  ),
+  const ExperienceDesktopItem(
+    imageLocation: "images/NUS_resized.png",
+    nameOfInternship: "Teaching Assistant",
+    durationOfInternship: "August 2022 - December 2022",
+    informationOfInternship:
+        "- Teaching Assistant for an Introduction to Programming Module in C++ (CS1010).\n\n" +
+            "- Assist the teaching team in grading their assignment submissions. Gave students constructive inputs on how they could better their coding style, re-usability of their algorithm etc.\n\n" +
+            "-  Introduced students to topics in computer science ranging from conditionals, loops, variables and arrays to recursive backtracking, very basic graph traversal and the basic tenants of dynamic programming.",
+    testimonialExists: false,
+    gradientChoices: [Colors.orangeAccent, Colors.lightBlue],
+  ),
+  const ExperienceDesktopItem(
+    imageLocation: "images/NUS_resized.png",
+    nameOfInternship: "Project Director",
+    durationOfInternship: "September 2021 - July 2022",
+    informationOfInternship:
+        "-  Lead a team of 40 students in organizing a 3-day physical camp which took place in June 2022.\n\n" +
+            "- My team and I proposed the theme, implementation schema and program and logistics flow to our advisor and CDE Club.\n\n" +
+            "- My team and I rapidly generated impromptu solutions to unforseen issues, and navigated the camp to a successful conclusion.",
+    testimonialExists: true,
+    gradientChoices: [Colors.orangeAccent, Colors.lightBlue],
+  ),
+  const ExperienceDesktopItem(
+    imageLocation: "images/NUS_resized.png",
+    nameOfInternship: "Student Council Representative",
+    durationOfInternship: "August 2021 - Present",
+    informationOfInternship:
+        "- Assisted the Undergraduate Student Council in collating feedback for various modules.\n\n" +
+            "- Liaised with module coordinators and department heads in inculcating relevant changes to better the nature and administration of modules.\n\n" +
+            "- Assisted in the organization of a career fair for the students of the ECE Department in NUS. LIaised with various companies and their reps on their attendance.",
+    testimonialExists: false,
+    gradientChoices: [Colors.orangeAccent, Colors.lightBlue],
+  ),
 ];
