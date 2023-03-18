@@ -1,12 +1,18 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'dart:async';
+
+import 'package:after_layout/after_layout.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive_builder/responsive_builder.dart';
+
 import 'package:portfolio_website/Experience/ExperienceView.dart';
 import 'package:portfolio_website/Header/HeaderView.dart';
 import 'package:portfolio_website/Project/ProjectView.dart';
 import 'package:portfolio_website/Project/ProjectView2.dart';
 import 'package:portfolio_website/Skills/Skills_View.dart';
 import 'package:portfolio_website/navbar/NavigationBar.dart';
-import 'package:responsive_builder/responsive_builder.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,33 +42,90 @@ class PortfolioView extends StatefulWidget {
   State<PortfolioView> createState() => _PortfolioViewState();
 }
 
-class _PortfolioViewState extends State<PortfolioView> {
+class _PortfolioViewState extends State<PortfolioView> with AfterLayoutMixin {
+  final projectKey = GlobalKey();
+  final skillsKey = GlobalKey();
+  final experienceKey = GlobalKey();
+  List<NavigationItem> navigationItems = [];
+
+  FutureOr<void> afterFirstLayout(BuildContext context) {
+    setState(() {
+      navigationItems = [
+        NavigationItem("Projects", projectKey),
+        NavigationItem("Skills", skillsKey),
+        NavigationItem("Experience", experienceKey),
+      ];
+    });
+
+    // final projectPosition = _getPositions(projectKey);
+    // final skillsPosition = _getPositions(skillsKey);
+    // final experiencePosition = _getPositions(experienceKey);
+  }
+
+  final ScrollController scrollController =
+      ScrollController(initialScrollOffset: 0);
+
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
-    final ScrollController scrollController = ScrollController();
-    return Scaffold(
-      drawer: const DrawerView(),
-      body: SingleChildScrollView(
-        child: Column(children: [
-          const NavigationBarView(),
-          HeaderView(height: height, width: width),
-          const ProjectView1(), // !add key here
-          const ProjectView2(), // !add key here
-          const SkillsView(), // ! add key here
-          const ExperienceView(), // ! add key here
-        ]),
+
+    return MultiProvider(
+      providers: [
+        ProxyProvider0<List<NavigationItem>>(
+            update: (_, __) => navigationItems),
+        ChangeNotifierProvider<ScrollController>(
+            create: (_) => scrollController),
+      ],
+      child: Scaffold(
+        drawer: const DrawerView(),
+        body: SingleChildScrollView(
+          controller: scrollController,
+          child: Column(children: [
+            const NavigationBarView(),
+            HeaderView(height: height, width: width),
+            ProjectView1(
+              key: projectKey,
+            ), // !add key here
+            const ProjectView2(), // !add key here
+            SkillsView(key: skillsKey), // ! add key here
+            ExperienceView(key: experienceKey), // ! add key here
+          ]),
+        ),
+        floatingActionButton: FloatingActionButton(
+            child: const Icon(Icons.arrow_upward),
+            onPressed: () {
+              if (scrollController.hasClients)
+                scrollController.animateTo(
+                  0,
+                  duration: const Duration(milliseconds: 700),
+                  curve: Curves.easeInOut,
+                );
+            }),
       ),
     );
   }
 }
 
-_getPositions(GlobalKey key) {
+class NavigationItem {
+  final String text;
+  final GlobalKey key;
+
+  NavigationItem(
+    this.text,
+    this.key,
+  );
+
+  double? get position => _getPositions(key);
+}
+
+double? _getPositions(GlobalKey key) {
   final renderObject = key.currentContext?.findRenderObject();
   final RenderBox? renderBoxRed = renderObject as RenderBox?;
   final positionRed = renderBoxRed?.localToGlobal(Offset.zero);
   print("POSITION of Red: $positionRed ");
+  final scrollOffset = positionRed?.dy;
+  return scrollOffset;
 }
 
 class DrawerView extends StatelessWidget {
@@ -70,6 +133,8 @@ class DrawerView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final navigationItems = context.watch<List<NavigationItem>>();
+    final scrollController = context.watch<ScrollController>();
     return ResponsiveBuilder(
       builder: (_, size) {
         if (!size.isMobile) return const SizedBox();
@@ -90,13 +155,13 @@ class DrawerView extends StatelessWidget {
                     "Akhil's Website",
                     style: TextStyle(color: Colors.white),
                   )),
-              for (var item in kNavigationItems)
+              for (var item in navigationItems)
                 ListTile(
                   title: Text(item.text),
                   onTap: () {
-                    // Update the state of the app
-                    // ...
-                    // Then close the drawer
+                    scrollController.animateTo(item.position?.toDouble() ?? 0.0,
+                        duration: const Duration(milliseconds: 700),
+                        curve: Curves.easeInOut);
                     Navigator.pop(context);
                   },
                 ),

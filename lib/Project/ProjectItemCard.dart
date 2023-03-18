@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../Constants.dart';
 
@@ -64,7 +65,7 @@ class ProjectItemCard extends StatelessWidget {
                 ),
               if (item.github)
                 OutlinedButton.icon(
-                  onPressed: () {},
+                  onPressed: () => launchUrl(Uri.parse(item.url)),
                   icon: const FaIcon(FontAwesomeIcons.github),
                   label: Text(
                     "Github",

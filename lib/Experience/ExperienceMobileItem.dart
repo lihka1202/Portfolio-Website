@@ -3,17 +3,19 @@ import 'package:flutter/material.dart';
 import 'package:flip_card/flip_card.dart';
 import 'package:flip_card/flip_card_controller.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ExperienceMobileItem extends StatefulWidget {
-  const ExperienceMobileItem({
-    Key? key,
-    required this.imageLocation,
-    required this.nameOfInternship,
-    required this.durationOfInternship,
-    required this.informationOfInternship,
-    required this.testimonialExists,
-    required this.gradientChoices,
-  }) : super(key: key);
+  const ExperienceMobileItem(
+      {Key? key,
+      required this.imageLocation,
+      required this.nameOfInternship,
+      required this.durationOfInternship,
+      required this.informationOfInternship,
+      required this.testimonialExists,
+      required this.gradientChoices,
+      required this.urlLink})
+      : super(key: key);
 
   final String imageLocation;
   final String nameOfInternship;
@@ -21,6 +23,7 @@ class ExperienceMobileItem extends StatefulWidget {
   final String informationOfInternship;
   final bool testimonialExists;
   final List<Color> gradientChoices;
+  final String urlLink;
   @override
   State<ExperienceMobileItem> createState() => _ExperienceMobileItemState();
 }
@@ -125,7 +128,7 @@ class _ExperienceMobileItemState extends State<ExperienceMobileItem> {
                 ),
                 if (widget.testimonialExists)
                   FloatingActionButton.extended(
-                      onPressed: () {},
+                      onPressed: () => launchUrl(Uri.parse(widget.urlLink)),
                       backgroundColor: Colors.black,
                       label: Text(
                         "Click to view my testimonial!",

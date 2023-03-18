@@ -1,5 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
 import 'package:portfolio_website/Experience/ExperienceDesktopItem.dart';
 import 'package:portfolio_website/Skills/SkillDesktopItem.dart';
 import 'package:portfolio_website/Skills/SkillsMobileItem.dart';
@@ -12,12 +13,14 @@ class ProjectItems {
   final String description;
   final List<String> techStacks;
   final bool github;
+  final String url;
   ProjectItems({
     required this.image,
     required this.title,
     required this.description,
     required this.techStacks,
     required this.github,
+    required this.url,
   });
 }
 
@@ -773,14 +776,16 @@ final kItems1 = [
       description:
           "SG Parking was designed to make commute easier for drivers by allowing them to gauge the parking occupancies at their destinations well before they even started moving. This would also alleviate unnecessary jams at packed parking spots by directing users to other parking spots. This project was done under the Orbital scheme at the National University of Singapore.",
       techStacks: ['Flutter', 'Firebase', 'Python', 'HTML', 'Git'],
-      github: true),
+      github: true,
+      url: 'https://github.com/lihka1202/Orbital2022.git'),
   ProjectItems(
       image: 'images/DUKE.png',
       title: 'Duke',
       description:
           "Duke is a CLI based Task Manager who is capable to managing a user's tasks. Duke can load and save the data, while ensuring that there is no data descrepancy. Duke is highly assistive in nature, due to a very high level of exception handling, which allows him to guide users when they falter. Duke is ultra portable and efficient in its operations.",
       techStacks: ["Java", "Bash", "Shell Scripting", "Git", "Gradle"],
-      github: true),
+      github: true,
+      url: 'https://github.com/lihka1202/ip.git'),
   ProjectItems(
       image: 'images/ALEX.png',
       title: "Alex",
@@ -796,7 +801,8 @@ final kItems1 = [
         "Hector Slam",
         "R-pi"
       ],
-      github: false),
+      github: false,
+      url: ''),
 ];
 
 final kItems2 = [
@@ -810,14 +816,16 @@ final kItems2 = [
         'Circuit Design',
         'Git',
       ],
-      github: false),
+      github: false,
+      url: ''),
   ProjectItems(
       image: 'images/INKA.png',
       title: 'Inka',
       description:
           "Inka is an ongoing project which aims to develop a flashcard manager based on a CLI interface. Inka aims to allow users to group flash cards according to different categories, while allowing them to create tags to group different cards across different groups!. This is an ongoing project, you can track its progress at the Github link provided below! ",
       techStacks: ["Java", "Bash", "Shell Scripting", "Git", "Gradle"],
-      github: true),
+      github: true,
+      url: 'https://github.com/AY2223S2-CS2113-F10-1/tp.git'),
   ProjectItems(
       image: 'images/SNAKE.png',
       title: "Snake Game",
@@ -828,7 +836,8 @@ final kItems2 = [
         "Python",
         "FPGA Circuit Design",
       ],
-      github: true),
+      github: true,
+      url: 'https://github.com/lihka1202/EE2026_Project.git'),
 ];
 
 final kExperienceDesktopItems = [
@@ -842,6 +851,8 @@ final kExperienceDesktopItems = [
             "- Prototyped a functional version of the web app which was able to fetch market data and also open or close positions for specific users and stocks.",
     testimonialExists: true,
     gradientChoices: [Colors.green, Colors.yellow],
+    urlLink:
+        'https://drive.google.com/file/d/1w8LkWNf5gicwkMkWHyZxvEfmmwSCdld8/view?usp=sharing',
   ),
   const ExperienceDesktopItem(
     imageLocation: "images/NUS_resized.png",
@@ -853,6 +864,7 @@ final kExperienceDesktopItems = [
             "-  Introduced students to topics in computer science ranging from conditionals, loops, variables and arrays to recursive backtracking, very basic graph traversal and the basic tenants of dynamic programming.",
     testimonialExists: false,
     gradientChoices: [Colors.orangeAccent, Colors.lightBlue],
+    urlLink: '',
   ),
   const ExperienceDesktopItem(
     imageLocation: "images/NUS_resized.png",
@@ -864,6 +876,7 @@ final kExperienceDesktopItems = [
             "- My team and I rapidly generated impromptu solutions to unforseen issues, and navigated the camp to a successful conclusion.",
     testimonialExists: true,
     gradientChoices: [Colors.orangeAccent, Colors.lightBlue],
+    urlLink: '',
   ),
   const ExperienceDesktopItem(
     imageLocation: "images/NUS_resized.png",
@@ -875,5 +888,6 @@ final kExperienceDesktopItems = [
             "- Assisted in the organization of a career fair for the students of the ECE Department in NUS. LIaised with various companies and their reps on their attendance.",
     testimonialExists: false,
     gradientChoices: [Colors.orangeAccent, Colors.lightBlue],
+    urlLink: '',
   ),
 ];

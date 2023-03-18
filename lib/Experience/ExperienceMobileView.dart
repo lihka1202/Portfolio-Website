@@ -34,12 +34,14 @@ class ExperienceMobileView extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0),
               child: ExperienceMobileItem(
-                  imageLocation: item.imageLocation,
-                  nameOfInternship: item.nameOfInternship,
-                  durationOfInternship: item.durationOfInternship,
-                  informationOfInternship: item.informationOfInternship,
-                  testimonialExists: item.testimonialExists,
-                  gradientChoices: item.gradientChoices),
+                imageLocation: item.imageLocation,
+                nameOfInternship: item.nameOfInternship,
+                durationOfInternship: item.durationOfInternship,
+                informationOfInternship: item.informationOfInternship,
+                testimonialExists: item.testimonialExists,
+                gradientChoices: item.gradientChoices,
+                urlLink: item.urlLink,
+              ),
             )
         ],
       ),

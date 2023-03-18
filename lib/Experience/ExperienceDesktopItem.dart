@@ -4,6 +4,7 @@ import 'package:flip_card/flip_card_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ExperienceDesktopItem extends StatefulWidget {
   const ExperienceDesktopItem({
@@ -14,6 +15,7 @@ class ExperienceDesktopItem extends StatefulWidget {
     required this.informationOfInternship,
     required this.testimonialExists,
     required this.gradientChoices,
+    required this.urlLink,
   }) : super(key: key);
 
   final String imageLocation;
@@ -22,6 +24,7 @@ class ExperienceDesktopItem extends StatefulWidget {
   final String informationOfInternship;
   final bool testimonialExists;
   final List<Color> gradientChoices;
+  final String urlLink;
 
   @override
   State<ExperienceDesktopItem> createState() => _ExperienceDesktopItemState();
@@ -93,7 +96,7 @@ class _ExperienceDesktopItemState extends State<ExperienceDesktopItem> {
                   ),
                   Text(
                     widget.nameOfInternship,
-                    textScaleFactor: (height < 980 && width < 1854)
+                    textScaleFactor: (height < 980 || width < 1854)
                         ? (height / 980) * (width / 1854)
                         : 1, // just try luck here
                     style: GoogleFonts.electrolize(
@@ -106,7 +109,7 @@ class _ExperienceDesktopItemState extends State<ExperienceDesktopItem> {
                   ),
                   Text(
                     widget.durationOfInternship,
-                    textScaleFactor: (height < 980 && width < 1854)
+                    textScaleFactor: (height < 980 || width < 1854)
                         ? (height / 980) * (width / 1854)
                         : 1, // luck here
                     style: GoogleFonts.electrolize(
@@ -120,7 +123,7 @@ class _ExperienceDesktopItemState extends State<ExperienceDesktopItem> {
                   ),
                   Text(
                     widget.informationOfInternship,
-                    textScaleFactor: (height < 980 && width < 1854)
+                    textScaleFactor: (height < 980 || width < 1854)
                         ? (height / 980) * (width / 1854)
                         : 1, //luck here
                     style: GoogleFonts.electrolize(
@@ -133,11 +136,11 @@ class _ExperienceDesktopItemState extends State<ExperienceDesktopItem> {
                   ),
                   if (widget.testimonialExists)
                     FloatingActionButton.extended(
-                        onPressed: () {},
+                        onPressed: () => launchUrl(Uri.parse(widget.urlLink)),
                         backgroundColor: Colors.black,
                         label: Text(
                           "Click to view my testimonial!",
-                          textScaleFactor: (height < 980 && width < 1854)
+                          textScaleFactor: (height < 980 || width < 1854)
                               ? (height / 980) * (width / 1854)
                               : 1,
                           style: GoogleFonts.electrolize(color: Colors.white),
