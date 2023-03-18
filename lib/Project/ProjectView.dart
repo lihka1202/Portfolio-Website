@@ -6,7 +6,9 @@ import 'package:portfolio_website/Project/ProjectDesktopView.dart';
 import 'package:portfolio_website/Project/ProjectMobileView.dart';
 
 class ProjectView1 extends StatelessWidget {
-  const ProjectView1({super.key});
+  const ProjectView1({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

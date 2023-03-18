@@ -4,7 +4,9 @@ import 'package:portfolio_website/Experience/ExperienceMobileView.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class ExperienceView extends StatelessWidget {
-  const ExperienceView({super.key});
+  const ExperienceView({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

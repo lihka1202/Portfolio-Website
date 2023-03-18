@@ -4,7 +4,9 @@ import 'package:portfolio_website/Skills/SkillsMobileView.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class SkillsView extends StatelessWidget {
-  const SkillsView({super.key});
+  const SkillsView({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
