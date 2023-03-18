@@ -4,9 +4,7 @@ import 'package:portfolio_website/Project/ProjectMobileView2.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class ProjectView2 extends StatelessWidget {
-  const ProjectView2({
-    Key? key,
-  }) : super(key: key);
+  const ProjectView2({super.key});
 
   @override
   Widget build(BuildContext context) {

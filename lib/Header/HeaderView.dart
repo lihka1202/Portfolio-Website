@@ -4,6 +4,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:portfolio_website/Constants.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HeaderView extends StatelessWidget {
   const HeaderView({
@@ -65,6 +66,20 @@ class HeaderBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String? encodeQueryParameters(Map<String, String> params) {
+      return params.entries
+          .map((MapEntry<String, String> e) =>
+              '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}')
+          .join('&');
+    }
+
+    final Uri emailLauncher = Uri(
+      scheme: 'mailto',
+      path: 'mnakhilwork@gmail.com',
+      query: encodeQueryParameters(<String, String>{'subject': 'Hey Akhil!'}),
+    );
+    final Uri _url = Uri.parse('https://flutter.dev');
+
     final width = MediaQuery.of(context).size.width;
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -125,7 +140,7 @@ class HeaderBody extends StatelessWidget {
           backgroundColor: Colors.deepOrange,
           splashColor: Colors.yellow,
           hoverColor: Colors.red,
-          onPressed: () {},
+          onPressed: () => launchUrl(emailLauncher),
           label: const AutoSizeText(
             "Contact me!",
             maxLines: 1,

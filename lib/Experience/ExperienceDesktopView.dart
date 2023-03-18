@@ -10,8 +10,8 @@ class ExperienceDesktopView extends StatelessWidget {
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
-    if (height <= 980 && width < 1343) {
-      height = height + (1854 - width);
+    if (height <= 980 || width < 1343) {
+      height = (980 - height) + (1854 - width);
     }
     return Container(
         padding: const EdgeInsets.symmetric(horizontal: 40),
@@ -45,6 +45,7 @@ class ExperienceDesktopView extends StatelessWidget {
                       nameOfInternship: item.nameOfInternship,
                       testimonialExists: item.testimonialExists,
                       gradientChoices: item.gradientChoices,
+                      urlLink: item.urlLink,
                     ),
                   ),
               ],
