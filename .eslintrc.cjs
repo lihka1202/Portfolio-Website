@@ -22,5 +22,7 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
     'no-nested-ternary': 'off',
+    'react/no-unknown-property': 'off',
+    'react/function-component-definition': 'off',
   },
 };
