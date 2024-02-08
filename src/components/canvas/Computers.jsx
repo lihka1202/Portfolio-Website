@@ -17,7 +17,15 @@ const Computers = () => {
 
       {/* Add the pintlight to help */}
 
-      <pointLight intensity={3} />
+      <pointLight intensity={10} />
+      {/* <spotLight
+        position={[-20, 50, 10]}
+        angle={1}
+        penumbra={1}
+        intensity={1}
+        castShadow
+        shadow-mapSize={1024}
+      /> */}
       <primitive
         object={computer.scene}
         scale={0.75}
@@ -43,8 +51,9 @@ const ComputersCanvas = () => {
         {/* Enabled orbit controlls around the model */}
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          // Disable y axis motion
+          maxPolarAngle={Math.PI}
+          minPolarAngle={Math.PI / 4}
         />
         <Computers />
       </Suspense>
