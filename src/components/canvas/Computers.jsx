@@ -38,6 +38,8 @@ const Computers = () => {
 };
 
 const ComputersCanvas = () => {
+  // const [isMobile, setisMobile] = useState(second);
+
   return (
     <Canvas
       frameloop="demand"
