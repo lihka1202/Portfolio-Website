@@ -40,6 +40,26 @@ const IndivExperienceCard = ({ experience }) => {
     >
       <div>
         <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <p
+          className="text-secondary font-semibold text-[16px]"
+          style={{ margin: 0 }}
+        >
+          {experience.company_name}
+        </p>
+
+        {/* Add the points here */}
+        {/* trackign wider helps with letter spacing
+        space-y-2 makes sure theres more distance between each point of the list */}
+        <ul className=" mt-5 list-disc ml-5 space-y-2">
+          {experience.points.map((point, index) => (
+            <li
+              className="text-white-100 text-[14px] pl-1 tracking-wider"
+              key={`experience-point-${index}`}
+            >
+              {point}
+            </li>
+          ))}
+        </ul>
       </div>
     </VerticalTimelineElement>
   );
