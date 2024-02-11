@@ -27,6 +27,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  nus,
+  followtrade,
+  fruitspec,
+  bettersg,
+  transcelestial,
 } from '../assets';
 
 export const navLinks = [
@@ -122,8 +127,8 @@ const experiences = [
   {
     title: 'Project Director',
     company_name: 'National University of Singapore',
-    icon: starbucks,
-    iconBg: '#383E56',
+    icon: nus,
+    iconBg: '#E6DEDD',
     date: 'August 2021 - July 2022',
     points: [
       'Worked to organize an orientation camp for the freshman matriculating into either Electrical Engineering or Computer Engineering.',
@@ -135,7 +140,7 @@ const experiences = [
   {
     title: 'Teaching Assistant (TA) ',
     company_name: 'National University of Singapore',
-    icon: tesla,
+    icon: nus,
     iconBg: '#E6DEDD',
     date: 'July 2022 - December 2022',
     points: [
@@ -146,8 +151,8 @@ const experiences = [
   {
     title: 'Software Engineering Intern',
     company_name: 'FollowTrade',
-    icon: shopify,
-    iconBg: '#383E56',
+    icon: followtrade,
+    iconBg: '#FFFFFF',
     date: 'Dec 2022 - March 2023',
     points: [
       'FollowTrade is a fintech start up which aims on introducing the tenants of social trading to Singapore.',
@@ -158,8 +163,8 @@ const experiences = [
   {
     title: 'Software Engineering Intern',
     company_name: 'FruitSpec',
-    icon: meta,
-    iconBg: '#E6DEDD',
+    icon: fruitspec,
+    iconBg: '#FFFFFF',
     date: 'July 2023 - Dec 2023',
     points: [
       'Interned at an emerging startup in Israel under the NOC initiative.',
@@ -173,8 +178,8 @@ const experiences = [
   {
     title: 'Volunteer Software Engineer',
     company_name: 'Better.sg',
-    icon: meta,
-    iconBg: '#E6DEDD',
+    icon: bettersg,
+    iconBg: '#FFFFFF',
     date: 'Dec 2023 - Present',
     points: [
       'Working on the SayLah app, which is expected to be used by nearly 8000 users.',
@@ -185,8 +190,8 @@ const experiences = [
   {
     title: 'Software Engineering Intern',
     company_name: 'Transcelestial',
-    icon: meta,
-    iconBg: '#E6DEDD',
+    icon: transcelestial,
+    iconBg: '#222222',
     date: 'January 2024 - Present',
     points: [
       'Currently engaged in the refactoring of the logging system codebase, transitioning from Rust to Go for improved efficiency and scalability.',

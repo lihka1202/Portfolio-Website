@@ -1,3 +1,4 @@
+/* eslint-disable implicit-arrow-linebreak */
 import { motion } from 'framer-motion';
 import { staggerContainer } from '../utils/motion';
 

@@ -27,6 +27,10 @@ import shopify from './company/shopify.png';
 import starbucks from './company/starbucks.png';
 import tesla from './company/tesla.png';
 import nus from './company/NUS.png';
+import fruitspec from './company/fruitspec.jpeg';
+import followtrade from './company/followtrade.png';
+import transcelestial from './company/transcelestial.png';
+import bettersg from './company/bettersg.png';
 
 import carrent from './carrent.png';
 import jobit from './jobit.png';
@@ -63,4 +67,8 @@ export {
   tripguide,
   akhil,
   nus,
+  fruitspec,
+  followtrade,
+  transcelestial,
+  bettersg,
 };
