@@ -1,22 +1,21 @@
 /* eslint-disable arrow-body-style */
 // Utilizing the R3F
-import { Suspense, useEffect, useState } from 'react';
+import { Suspense, useEffect, useState, useRef } from 'react';
 
-import { Canvas } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 
 // Allows us to import models using useGLTF
 import { OrbitControls, Preload, meshBounds, useGLTF } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
 
-const Computers = () => {
+const Computers = ({ isMobile }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
+
   return (
     <mesh>
       <hemisphereLight intensity={4} groundColor="black" />
-
       {/* Add the pintlight to help */}
-
       <pointLight intensity={10} />
       {/* <spotLight
         position={[-20, 50, 10]}
@@ -25,11 +24,12 @@ const Computers = () => {
         intensity={1}
         castShadow
         shadow-mapSize={1024}
-      /> */}
+      /> */}{' '}
+      {/* Wrap the model in a group */}
       <primitive
         object={computer.scene}
-        scale={0.75}
-        position={[0, -3.25, -1.5]}
+        scale={isMobile ? 0.7 : 0.75}
+        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -38,7 +38,29 @@ const Computers = () => {
 };
 
 const ComputersCanvas = () => {
-  // const [isMobile, setisMobile] = useState(second);
+  //! Make sure that this state is not applied by default
+  const [isMobile, setisMobile] = useState(false);
+
+  useEffect(() => {
+    //! Add a listener for the screen size
+    const mediaQuery = window.matchMedia('(max-width: 500px)');
+
+    //! Set this query depending on whether the query matches
+    setisMobile(mediaQuery.matches);
+
+    //! A callback to handle the media query
+    const handleMediaQueryChange = (event) => {
+      setisMobile(event.matches);
+    };
+
+    //! Add the callback as an event listener
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
+
+    //! Remove the listener when the componenet is unmounted
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+    };
+  }, []);
 
   return (
     <Canvas
