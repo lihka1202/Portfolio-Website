@@ -69,7 +69,7 @@ function Experience() {
   return (
     //! Fragments are more efficient ways of adding elements to the DOM
     <>
-      <motion.div>
+      <motion.div variants={textVariant}>
         <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
           Some companies I have worked for..
         </p>
