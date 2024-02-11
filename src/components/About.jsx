@@ -10,6 +10,8 @@ import { services } from '../constants';
 
 import { fadeIn, textVariant } from '../utils/motion';
 
+import { SectionWrappingMechanism } from '../hoc';
+
 const IndivServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
@@ -49,13 +51,13 @@ function About() {
         variants={fadeIn('', '', 0.1, 1)}
         className=" mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Welcome to my corner of the internet! I'm a driven computing student at
-        the National University of Singapore, deeply immersed in the world of
-        technology and innovation. Currently interning at an emerging startup,
-        Transcelestial, I'm honing my skills in software engineering, testing
-        infrastructure, and full-stack app development. Join me on this journey
-        as I navigate through the dynamic realm of tech and embrace new
-        challenges and opportunities along the way.
+        Welcome to my corner of the internet! I&apos;m a driven computing
+        student at the National University of Singapore, deeply immersed in the
+        world of technology and innovation. Currently interning at an emerging
+        startup, Transcelestial, I&apos;m honing my skills in software
+        engineering, testing infrastructure, and full-stack app development.
+        Join me on this journey as I navigate through the dynamic realm of tech
+        and embrace new challenges and opportunities along the way.
       </motion.p>
 
       <div className=" mt-20 flex flex-wrap gap-10">
@@ -72,4 +74,4 @@ function About() {
   );
 }
 
-export default About;
+export default SectionWrappingMechanism(About, 'about');
