@@ -8,21 +8,11 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
-  css,
   reactjs,
-  redux,
-  tailwind,
   nodejs,
   mongodb,
-  git,
-  figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
@@ -32,6 +22,13 @@ import {
   fruitspec,
   bettersg,
   transcelestial,
+  python,
+  cpp,
+  java,
+  golang,
+  sql,
+  aws,
+  playwright,
 } from '../assets';
 
 export const navLinks = [
@@ -74,24 +71,20 @@ const technologies = [
     icon: html,
   },
   {
-    name: 'CSS 3',
-    icon: css,
+    name: 'C++',
+    icon: cpp,
   },
   {
     name: 'JavaScript',
     icon: javascript,
   },
   {
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
     name: 'React JS',
     icon: reactjs,
   },
   {
-    name: 'Tailwind CSS',
-    icon: tailwind,
+    name: 'Playwright',
+    icon: playwright,
   },
   {
     name: 'Node JS',
@@ -106,16 +99,28 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: 'git',
-    icon: git,
-  },
-  {
-    name: 'figma',
-    icon: figma,
+    name: 'python',
+    icon: python,
   },
   {
     name: 'docker',
     icon: docker,
+  },
+  {
+    name: 'java',
+    icon: java,
+  },
+  {
+    name: 'Go',
+    icon: golang,
+  },
+  {
+    name: 'SQL',
+    icon: sql,
+  },
+  {
+    name: 'AWS',
+    icon: aws,
   },
 ];
 
