@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/jsx-wrap-multilines */
 /* eslint-disable arrow-body-style */
 /* eslint-disable react/jsx-no-useless-fragment */
