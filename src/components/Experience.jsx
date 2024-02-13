@@ -61,6 +61,8 @@ const IndivExperienceCard = ({ experience }) => {
             </li>
           ))}
         </ul>
+        {/* Add the cards with skillsets here */}
+        <div className="w-[72px] h-[24px] bg-black rounded-2xl mt-5"></div>
       </div>
     </VerticalTimelineElement>
   );
