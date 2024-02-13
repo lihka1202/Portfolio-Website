@@ -36,6 +36,16 @@ import bettersg from './company/bettersg.png';
 import carrent from './carrent.png';
 import jobit from './jobit.png';
 import tripguide from './tripguide.png';
+import timerChromeExtension from './TimerChromeExtension.png';
+import snoopy from './snoopy.jpeg';
+import doughnut from './doughnut.png';
+import portfolio from './portfoliowebsite.png';
+import SGParking from './SGParking.png';
+import Duke from './Duke.png';
+import Inka from './Inka.png';
+import ToneSpyder from './ToneSpyder.png';
+import MBOT from './MBOT.png';
+import Alex from './Alex.png';
 
 export {
   logo,
@@ -70,4 +80,14 @@ export {
   sql,
   aws,
   playwright,
+  timerChromeExtension,
+  snoopy,
+  doughnut,
+  portfolio,
+  SGParking,
+  Inka,
+  Duke,
+  ToneSpyder,
+  MBOT,
+  Alex,
 };

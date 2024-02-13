@@ -1,11 +1,16 @@
 /* eslint-disable arrow-body-style */
 // Utilizing the R3F
-import { Suspense, useEffect, useState, useRef } from 'react';
+import { Clock } from 'three';
+import {
+  Suspense, useEffect, useState, useRef,
+} from 'react';
 
 import { Canvas, useFrame } from '@react-three/fiber';
 
 // Allows us to import models using useGLTF
-import { OrbitControls, Preload, meshBounds, useGLTF } from '@react-three/drei';
+import {
+  OrbitControls, Preload, meshBounds, useGLTF,
+} from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
 
@@ -17,14 +22,8 @@ const Computers = ({ isMobile }) => {
       <hemisphereLight intensity={4} groundColor="black" />
       {/* Add the pintlight to help */}
       <pointLight intensity={10} />
-      {/* <spotLight
-        position={[-20, 50, 10]}
-        angle={1}
-        penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
-      /> */}{' '}
+
+      {' '}
       {/* Wrap the model in a group */}
       <primitive
         object={computer.scene}
