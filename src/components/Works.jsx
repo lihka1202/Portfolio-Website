@@ -1,17 +1,21 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/jsx-no-useless-fragment */
+import { useEffect, useState } from 'react';
+
 import { Tilt } from 'react-tilt';
 
 import { motion } from 'framer-motion';
-
 import { github } from '../assets';
 
-import { SectionWrappingMechanism } from '../hoc';
+import {
+  SectionWrappingMechanism,
+  SectionWrappingMechanismNoMotion,
+} from '../hoc';
 
 import { projects } from '../constants';
 
-import { fadeIn, textVariant } from '../utils/motion';
+import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
 
 const IndivProjectCard = ({
   index,
@@ -66,7 +70,7 @@ const IndivProjectCard = ({
   </motion.div>
 );
 
-const Works = () => (
+const WorksCard = () => (
   <>
     <motion.div variants={textVariant}>
       <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
@@ -101,4 +105,36 @@ const Works = () => (
   </>
 );
 
-export default SectionWrappingMechanism(Works, '');
+function Works() {
+  //! Make sure that this state is not applied by default
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 1268px)');
+    setIsMobile(mediaQuery.matches);
+
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+    };
+  }, []);
+  return (
+    <motion.section
+      variants={staggerContainer()}
+      initial={isMobile ? '' : 'hidden'}
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0"
+    >
+      <span className="hash-span">&nbsp;</span>
+      <WorksCard />
+    </motion.section>
+  );
+}
+
+export default Works;

@@ -67,10 +67,8 @@ const IndivExperienceCard = ({ experience }) => {
             <p className={`text-[14px] ${tag.color}`} key={tag.name}>
               {tag.name}
             </p>
-
           ))}
         </div>
-
       </div>
     </VerticalTimelineElement>
   );

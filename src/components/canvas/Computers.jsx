@@ -1,16 +1,12 @@
 /* eslint-disable arrow-body-style */
 // Utilizing the R3F
 import { Clock } from 'three';
-import {
-  Suspense, useEffect, useState, useRef,
-} from 'react';
+import { Suspense, useEffect, useState, useRef } from 'react';
 
 import { Canvas, useFrame } from '@react-three/fiber';
 
 // Allows us to import models using useGLTF
-import {
-  OrbitControls, Preload, meshBounds, useGLTF,
-} from '@react-three/drei';
+import { OrbitControls, Preload, meshBounds, useGLTF } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
 
@@ -22,9 +18,6 @@ const Computers = ({ isMobile }) => {
       <hemisphereLight intensity={4} groundColor="black" />
       {/* Add the pintlight to help */}
       <pointLight intensity={10} />
-
-      {' '}
-      {/* Wrap the model in a group */}
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
@@ -78,7 +71,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI}
           minPolarAngle={Math.PI / 4}
         />
-        <Computers />
+        <Computers isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>
