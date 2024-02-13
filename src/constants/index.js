@@ -137,6 +137,20 @@ const experiences = [
       'Created and vetted the proposed event flow with the camp advisor, proposed backups and wet weather alternatives.',
       'The camp was attended by 116 students, and we incurred an injury rate of 0%.',
     ],
+    tags: [
+      {
+        name: 'Management',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Organization',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Planning',
+        color: 'pink-text-gradient',
+      },
+    ],
   },
   {
     title: 'Teaching Assistant (TA) ',
@@ -147,6 +161,20 @@ const experiences = [
     points: [
       'Conducted weekly lab sessions for 15 students and grade their assignments.',
       'Introduced students to concepts ranging from variables and arrays to recursion with backtracking, trivial graph searching algorithms, greedy algorithms and basic dynamic programming.',
+    ],
+    tags: [
+      {
+        name: 'C++',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Algorithms',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Teaching',
+        color: 'pink-text-gradient',
+      },
     ],
   },
   {
@@ -159,6 +187,24 @@ const experiences = [
       'FollowTrade is a fintech start up which aims on introducing the tenants of social trading to Singapore.',
       'Worked on developing and integrating a broker agnostic platform with an existing broker.',
       'Skillset gained: REST APIs, REACT.js, Spring Boot, Java, Django, Boot',
+    ],
+    tags: [
+      {
+        name: 'Rest APIs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'React',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Spring Boot',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'Django',
+        color: 'orange-text-gradient',
+      },
     ],
   },
   {
@@ -175,6 +221,32 @@ const experiences = [
       'Built automated micro-service triggers which responded to data inputs from edge devices.',
       'Built a simulator system capable of conducting end to end backend pipeline testing.',
     ],
+    tags: [
+      {
+        name: 'Python',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'FastAPI',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Django',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'SQL',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Go',
+        color: 'orange-text-gradient',
+      },
+      {
+        name: 'AWS',
+        color: 'green-text-gradient',
+      },
+    ],
   },
   {
     title: 'Volunteer Software Engineer',
@@ -187,6 +259,24 @@ const experiences = [
       'The app is meant to enable non-verbal users to communicate their feelings.',
       'Tech Stack : Angular + GoLang + Prisma(ORM) + Vercel(Deployment)',
     ],
+    tags: [
+      {
+        name: 'Angular',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'MongoDB',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Express.JS',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'Node.JS',
+        color: 'orange-text-gradient',
+      },
+    ],
   },
   {
     title: 'Software Engineering Intern',
@@ -198,6 +288,12 @@ const experiences = [
       'Currently engaged in the refactoring of the logging system codebase, transitioning from Rust to Go for improved efficiency and scalability.',
       'Addressing challenges related to querying specific CRUD operations within the API, streamlining processes for enhanced functionality.',
       "Contributing to the project's robustness by diligently writing tests using Playwright, ensuring comprehensive end-to-end testing and reinforcing code reliability.",
+    ],
+    tags: [
+      {
+        name: 'PlayWright',
+        color: 'blue-text-gradient',
+      },
     ],
   },
 ];
@@ -295,4 +391,6 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services, technologies, experiences, testimonials, projects,
+};

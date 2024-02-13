@@ -62,7 +62,15 @@ const IndivExperienceCard = ({ experience }) => {
           ))}
         </ul>
         {/* Add the cards with skillsets here */}
-        <div className="w-[72px] h-[24px] bg-black rounded-2xl mt-5"></div>
+        <div className="mt-4 flex flex-wrap gap-3">
+          {experience.tags.map((tag) => (
+            <p className={`text-[14px] ${tag.color}`} key={tag.name}>
+              {tag.name}
+            </p>
+
+          ))}
+        </div>
+
       </div>
     </VerticalTimelineElement>
   );
