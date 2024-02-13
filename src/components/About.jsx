@@ -74,4 +74,4 @@ function About() {
   );
 }
 
-export default SectionWrappingMechanism(About, 'about');
+export default SectionWrappingMechanism(About, 'about', true);

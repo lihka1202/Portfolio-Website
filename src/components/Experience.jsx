@@ -100,4 +100,4 @@ function Experience() {
 }
 
 //! Follow the Navbar for the IdName to make sure routerdom can pick up the right place to point to
-export default SectionWrappingMechanism(Experience, 'work');
+export default SectionWrappingMechanism(Experience, 'work', true);

@@ -30,4 +30,4 @@ const Tech = () => {
   );
 };
 
-export default SectionWrappingMechanism(Tech);
+export default SectionWrappingMechanism(Tech, '', true);

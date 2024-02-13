@@ -70,7 +70,7 @@ const IndivProjectCard = ({
   </motion.div>
 );
 
-const WorksCard = () => (
+const Works = () => (
   <>
     <motion.div variants={textVariant}>
       <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
@@ -105,36 +105,19 @@ const WorksCard = () => (
   </>
 );
 
-function Works() {
-  //! Make sure that this state is not applied by default
-  const [isMobile, setIsMobile] = useState(false);
+// function Works() {
+//   return (
+//     <motion.section
+//       variants={staggerContainer()}
+//       initial="hidden"
+//       whileInView="show"
+//       viewport={{ once: true, amount: 'some' }}
+//       className="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0"
+//     >
+//       <span className="hash-span">&nbsp;</span>
+//       <WorksCard />
+//     </motion.section>
+//   );
+// }
 
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 1268px)');
-    setIsMobile(mediaQuery.matches);
-
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
-
-    return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
-    };
-  }, []);
-  return (
-    <motion.section
-      variants={staggerContainer()}
-      initial={isMobile ? '' : 'hidden'}
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0"
-    >
-      <span className="hash-span">&nbsp;</span>
-      <WorksCard />
-    </motion.section>
-  );
-}
-
-export default Works;
+export default SectionWrappingMechanism(Works, '', false);
