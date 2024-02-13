@@ -33,9 +33,6 @@ import transcelestial from './company/transcelestial.png';
 import bettersg from './company/bettersg.png';
 
 //! Project Logos
-import carrent from './carrent.png';
-import jobit from './jobit.png';
-import tripguide from './tripguide.png';
 import timerChromeExtension from './TimerChromeExtension.png';
 import snoopy from './snoopy.jpeg';
 import doughnut from './doughnut.png';
@@ -64,9 +61,6 @@ export {
   nodejs,
   reactjs,
   threejs,
-  carrent,
-  jobit,
-  tripguide,
   akhil,
   nus,
   fruitspec,

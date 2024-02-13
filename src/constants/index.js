@@ -13,9 +13,6 @@ import {
   nodejs,
   mongodb,
   docker,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   nus,
   followtrade,
@@ -196,7 +193,6 @@ const experiences = [
     points: [
       'FollowTrade is a fintech start up which aims on introducing the tenants of social trading to Singapore.',
       'Worked on developing and integrating a broker agnostic platform with an existing broker.',
-      'Skillset gained: REST APIs, REACT.js, Spring Boot, Java, Django, Boot',
     ],
     tags: [
       {
@@ -267,7 +263,6 @@ const experiences = [
     points: [
       'Working on the SayLah app, which is expected to be used by nearly 8000 users.',
       'The app is meant to enable non-verbal users to communicate their feelings.',
-      'Tech Stack : Angular + GoLang + Prisma(ORM) + Vercel(Deployment)',
     ],
     tags: [
       {
