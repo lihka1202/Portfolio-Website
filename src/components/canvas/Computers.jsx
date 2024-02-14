@@ -27,6 +27,20 @@ const Computers = ({ isMobile }) => {
     </mesh>
     // But this is not enough, add this to the canvas to see it
   );
+  // return (
+  //   <mesh>
+  //     <hemisphereLight intensity={1} groundColor="black" />
+  //     {/* Add the pintlight to help */}
+  //     <pointLight intensity={1} />
+  //     <primitive
+  //       object={computer.scene}
+  //       scale={0.16}
+  //       position={[-1, -3.3, 0]}
+  //       rotation={[0, 0, 0]}
+  //     />
+  //   </mesh>
+  //   // But this is not enough, add this to the canvas to see it
+  // );
 };
 
 const ComputersCanvas = () => {
