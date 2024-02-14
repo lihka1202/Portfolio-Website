@@ -27,7 +27,7 @@ function App() {
         <div>{/* The next div is for the stars and the canvas */}</div>
         <div className="relative z-0">
           <Contact />
-          <StarsCanvas />
+          {/* <StarsCanvas /> */}
         </div>
       </div>
     </BrowserRouter>
