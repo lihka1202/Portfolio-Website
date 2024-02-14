@@ -36,6 +36,8 @@ import {
   ToneSpyder,
   Alex,
   MBOT,
+  meta,
+  udemy,
 } from '../assets';
 
 export const navLinks = [
@@ -330,6 +332,71 @@ const testimonials = [
   },
 ];
 
+const certifications = [
+  {
+    name: 'Introduction to Back-End Development',
+    description: 'Issued January 2023',
+    image: meta,
+    source_code_link:
+      'https://www.coursera.org/account/accomplishments/certificate/Q6SCLNNDG2YF',
+  },
+  {
+    name: 'Flutter Web: Create a Responsive Sleek Developer Portfolio',
+    description: 'Issued March 2023',
+    image: udemy,
+    source_code_link:
+      'https://udemy-certificate.s3.amazonaws.com/pdf/UC-e0cb87d6-a201-4f4d-8720-2366f9ec6c95.pdf',
+  },
+  {
+    name: 'Version Control',
+    description: 'Issued Apr 2023',
+    image: meta,
+    source_code_link:
+      'https://www.coursera.org/account/accomplishments/certificate/ME3X8PF77S2M',
+  },
+  {
+    name: 'Programming in Python',
+    description: 'Issued Apr 2023',
+    image: meta,
+    source_code_link:
+      'https://www.coursera.org/account/accomplishments/certificate/JK4PGNHUECF5',
+  },
+  {
+    name: 'The Complete SQL Bootcamp',
+    description: 'Issued May 2023',
+    image: udemy,
+    source_code_link:
+      'https://www.udemy.com/certificate/UC-0f344c5d-36fc-4583-bce0-e0c63cb776b3/',
+  },
+  {
+    name: 'Introduction to Databases for Back-End Development',
+    description: 'Issued May 2023',
+    image: meta,
+    source_code_link:
+      'https://www.coursera.org/account/accomplishments/certificate/XE5S9VBVMMLY',
+  },
+  {
+    name: "Go: The Complete Developer's Guide (Golang)",
+    description: 'Issued Aug 2023',
+    image: udemy,
+    source_code_link:
+      'https://www.udemy.com/certificate/UC-89e7afce-7da3-4dbb-9da7-528499215baf/',
+  },
+  {
+    name: 'AWS Amazon S3 Mastery Bootcamp',
+    description: 'Issued Aug 2023',
+    image: udemy,
+    source_code_link:
+      'https://www.udemy.com/certificate/UC-eff0db8b-7f50-4daa-8390-7cc0d61d01ae/',
+  },
+  {
+    name: 'Django Web Framework',
+    description: 'Issued Dec 2023',
+    image: meta,
+    source_code_link:
+      'https://www.coursera.org/account/accomplishments/verify/H9WFQQSG63MS',
+  },
+];
 const projects = [
   {
     name: 'Timer Chrome Extension',
@@ -556,4 +623,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, certifications, projects };

@@ -7,6 +7,7 @@ import github from './github.png';
 import menu from './menu.svg';
 import close from './close.svg';
 import akhil from './akhil.svg';
+import link from './link-2.png';
 
 //! Tech stack logos
 import docker from './tech/docker.png';
@@ -24,6 +25,8 @@ import golang from './tech/go-lang.png';
 import sql from './tech/sql-server-2.png';
 import aws from './tech/aws.png';
 import playwright from './tech/playwright.png';
+import meta from './meta_cert.png';
+import udemy from './udemy.png';
 
 //! Company Logos
 import nus from './company/NUS.png';
@@ -84,4 +87,7 @@ export {
   ToneSpyder,
   MBOT,
   Alex,
+  link,
+  meta,
+  udemy,
 };

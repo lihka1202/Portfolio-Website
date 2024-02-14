@@ -9,7 +9,7 @@ import {
   Navbar,
   Tech,
   Works,
-  StarsCanvas,
+  Licenses,
 } from './components';
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
         <Experience />
         <Tech />
         <Works />
+        <Licenses />
         <div>{/* The next div is for the stars and the canvas */}</div>
         <div className="relative z-0">
           <Contact />

@@ -8,14 +8,11 @@ import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { github } from '../assets';
 
-import {
-  SectionWrappingMechanism,
-  SectionWrappingMechanismNoMotion,
-} from '../hoc';
+import { SectionWrappingMechanism } from '../hoc';
 
 import { projects } from '../constants';
 
-import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
+import { fadeIn, textVariant } from '../utils/motion';
 
 const IndivProjectCard = ({
   index,
