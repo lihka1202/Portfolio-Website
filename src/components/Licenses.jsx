@@ -66,14 +66,11 @@ const Licenses = () => (
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Welcome to my Projects Showcase! Here you&apos;ll find a curated
-        collection of my latest ventures, where I bring ideas to life through
-        coding and innovation. Dive in to explore my diverse range of projects,
-        from web applications to machine learning experiments. Each project
-        represents a unique challenge I&apos;ve tackled, showcasing my technical
-        skills and creative problem-solving abilities. I&apos;ve also placed
-        github repository links where applicable, so that you can go check the
-        code that runs each of these projects out!
+        Welcome to my certification page, where knowledge meets validation.
+        Here, I proudly showcase the culmination of my dedication and expertise,
+        certified by reputable institutions. Explore the credentials that affirm
+        my proficiency and commitment to continuous learning in the
+        ever-evolving landscape of technology.
       </motion.p>
     </div>
 

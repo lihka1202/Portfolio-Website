@@ -12,16 +12,59 @@ import { slideIn } from '../utils/motion';
 function Contact() {
   const formRef = useRef();
 
-  const [form, setform] = useState({
+  const [form, setForm] = useState({
     name: '',
     email: '',
     message: '',
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  //Template ID : template_1t1lrqf
+  //Service ID : service_n086sql
+  //Public Key : 7gYOEKEcd2eVo-uaf
 
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    //! Avoid browser refresh
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        'service_n086sql',
+        'template_1t1lrqf',
+        {
+          from_name: form.name,
+          to_name: 'Akhil',
+          from_email: form.email,
+          to_email: 'mnakhilwork@gmail.com',
+          message: form.message,
+        },
+        '7gYOEKEcd2eVo-uaf',
+      )
+      .then(() => {
+        setLoading(false);
+        alert('I will get back to you soon!');
+      });
+
+    setForm(
+      {
+        name: '',
+        email: '',
+        message: '',
+      },
+      (error) => {
+        console.log(error);
+        alert(
+          'something went wrong, please contact me at mnakhilwork@gmail.com',
+        );
+      },
+    );
+  };
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
