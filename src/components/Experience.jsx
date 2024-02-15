@@ -90,9 +90,12 @@ function Experience() {
       {/* Vertical Timeline */}
       <div className=" mt-20 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <IndivExperienceCard key={index} experience={experience} />
-          ))}
+          {experiences
+            .slice()
+            .reverse()
+            .map((experience, index) => (
+              <IndivExperienceCard key={index} experience={experience} />
+            ))}
         </VerticalTimeline>
       </div>
     </>

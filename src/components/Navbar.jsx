@@ -30,8 +30,8 @@ function Navbar() {
         >
           <img src={akhil} alt="logo" className=" h-11 w-11 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer">
-            Akhils
-            <span className="sm:block hidden"> Portfolio</span>
+            Akhil&apos;s Portfolio
+            {/* <span className="sm:block hidden"> Portfolio</span> */}
           </p>
         </Link>
         {/* Added padding here */}

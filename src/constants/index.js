@@ -301,6 +301,14 @@ const experiences = [
         name: 'PlayWright',
         color: 'blue-text-gradient',
       },
+      {
+        name: 'JavaScript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Go',
+        color: 'orange-text-gradient',
+      },
     ],
   },
 ];
