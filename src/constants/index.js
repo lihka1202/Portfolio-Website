@@ -576,7 +576,7 @@ const projects = [
   {
     name: 'MBOT',
     description:
-      'MBOT is a robot that is capable of navigating through a complex maze solely based on colour cues. MBOT is equipped with an ultrasonic sensor and a home built colour sensor which can detect a wide spectrum of colouts in different lighting conditions.',
+      'MBOT is a robot that is capable of navigating through a complex maze solely based on colour cues. MBOT is equipped with an ultrasonic sensor and a home built colour sensor which can detect a wide spectrum of colours in different lighting conditions.',
     tags: [
       {
         name: 'Arduino',
