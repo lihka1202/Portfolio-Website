@@ -27,6 +27,7 @@ import aws from './tech/aws.png';
 import playwright from './tech/playwright.png';
 import meta from './meta_cert.png';
 import udemy from './udemy.png';
+import uci from './uci.png';
 
 //! Company Logos
 import nus from './company/NUS.png';
@@ -90,4 +91,5 @@ export {
   link,
   meta,
   udemy,
+  uci,
 };

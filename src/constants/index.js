@@ -38,6 +38,7 @@ import {
   MBOT,
   meta,
   udemy,
+  uci,
 } from '../assets';
 
 export const navLinks = [
@@ -261,7 +262,7 @@ const experiences = [
     company_name: 'Better.sg',
     icon: bettersg,
     iconBg: '#FFFFFF',
-    date: 'Dec 2023 - Present',
+    date: 'Dec 2023 - May 2024',
     points: [
       'Working on the SayLah app, which is expected to be used by nearly 8000 users.',
       'The app is meant to enable non-verbal users to communicate their feelings.',
@@ -290,7 +291,7 @@ const experiences = [
     company_name: 'Transcelestial',
     icon: transcelestial,
     iconBg: '#222222',
-    date: 'January 2024 - Present',
+    date: 'January 2024 - May 2024',
     points: [
       'Currently engaged in the refactoring of the logging system codebase, transitioning from Rust to Go for improved efficiency and scalability.',
       'Addressing challenges related to querying specific CRUD operations within the API, streamlining processes for enhanced functionality.',
@@ -376,6 +377,34 @@ const certifications = [
     image: meta,
     source_code_link:
       'https://www.coursera.org/account/accomplishments/verify/H9WFQQSG63MS',
+  },
+  {
+    name: 'Playwright: Web Automation Testing from Zero to Hero',
+    description: 'Issued May 2024',
+    image: meta,
+    source_code_link:
+      'https://www.udemy.com/certificate/UC-720aa509-ac3f-4064-9b43-63489b67bd60/',
+  },
+  {
+    name: 'Getting Started with Go',
+    description: 'Issued May 2024',
+    image: uci,
+    source_code_link:
+      'https://www.coursera.org/account/accomplishments/records/98UFGRY9TRX8',
+  },
+  {
+    name: 'Functions, Methods and Interfaces in Go',
+    description: 'Issued May 2024',
+    image: uci,
+    source_code_link:
+      'https://www.coursera.org/account/accomplishments/records/NBLCBNG28ECQ',
+  },
+  {
+    name: 'Database Structures and Management with MySQL',
+    description: 'Issued May 2024',
+    image: meta,
+    source_code_link:
+      'https://www.coursera.org/account/accomplishments/records/VJ2WTJLFH5ZS',
   },
 ];
 const projects = [
@@ -604,4 +633,6 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, certifications, projects };
+export {
+  services, technologies, experiences, certifications, projects,
+};
