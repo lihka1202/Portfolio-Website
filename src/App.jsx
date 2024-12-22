@@ -27,7 +27,7 @@ function App() {
         <Licenses />
         <div>{/* The next div is for the stars and the canvas */}</div>
         <div className="relative z-0">
-          <Contact />
+          {/* <Contact /> */}
           {/* <StarsCanvas /> */}
         </div>
       </div>
