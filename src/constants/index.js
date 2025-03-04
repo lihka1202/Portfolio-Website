@@ -39,7 +39,8 @@ import {
   udemy,
   uci,
   creditagricole,
-  ampol
+  ampol,
+  barclays
 } from '../assets';
 
 export const navLinks = [
@@ -343,6 +344,30 @@ const experiences = [
       {
         name: 'Selenium',
         color: 'pink-text-gradient',
+      },
+    ],
+  },
+  {
+    title: 'Incoming Technology Developer Analyst',
+    company_name: 'Barclays Corporate Investment Bank',
+    icon: barclays,
+    iconBg: '#FFFFFF',
+    date: 'August 2025 - ',
+    points: [
+      'Incoming Technology Developer Analyst at Barclays Corporate Investment Bank Singapore'
+    ],
+    tags: [
+      {
+        name: 'Java',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'C++',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Python',
+        color: 'orange-text-gradient',
       },
     ],
   },

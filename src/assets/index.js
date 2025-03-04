@@ -37,6 +37,7 @@ import transcelestial from './company/transcelestial.png';
 import bettersg from './company/bettersg.png';
 import creditagricole from './company/creditagricole.png';
 import ampol from './company/ampol.svg';
+import barclays from './company/barclays.png'
 
 //! Project Logos
 import timerChromeExtension from './TimerChromeExtension.png';
@@ -95,5 +96,6 @@ export {
   udemy,
   uci,
   creditagricole,
-  ampol
+  ampol,
+  barclays
 };
