@@ -262,9 +262,9 @@ const experiences = [
     iconBg: '#222222',
     date: 'January 2024 - May 2024',
     points: [
-      'Currently engaged in the refactoring of the logging system codebase, transitioning from Rust to Go for improved efficiency and scalability.',
-      'Addressing challenges related to querying specific CRUD operations within the API, streamlining processes for enhanced functionality.',
-      "Contributing to the project's robustness by diligently writing tests using Playwright, ensuring comprehensive end-to-end testing and reinforcing code reliability.",
+      'Engaged in the refactoring of the logging system codebase, transitioning from Rust to Go for improved efficiency and scalability.',
+      'Addressed challenges related to querying specific CRUD operations within the API, streamlining processes for enhanced functionality.',
+      "Contributed to the project's robustness by diligently writing tests using Playwright, ensuring comprehensive end-to-end testing and reinforcing code reliability.",
     ],
     tags: [
       {
