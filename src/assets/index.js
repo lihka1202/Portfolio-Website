@@ -35,6 +35,7 @@ import fruitspec from './company/fruitspec.jpeg';
 import followtrade from './company/followtrade.png';
 import transcelestial from './company/transcelestial.png';
 import bettersg from './company/bettersg.png';
+import creditagricole from './company/creditagricole.png';
 
 //! Project Logos
 import timerChromeExtension from './TimerChromeExtension.png';
@@ -92,4 +93,5 @@ export {
   meta,
   udemy,
   uci,
+  creditagricole
 };

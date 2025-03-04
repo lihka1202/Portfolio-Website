@@ -17,7 +17,6 @@ import {
   nus,
   followtrade,
   fruitspec,
-  bettersg,
   transcelestial,
   python,
   cpp,
@@ -39,6 +38,7 @@ import {
   meta,
   udemy,
   uci,
+  creditagricole
 } from '../assets';
 
 export const navLinks = [
@@ -49,10 +49,6 @@ export const navLinks = [
   {
     id: 'work',
     title: 'Work',
-  },
-  {
-    id: 'contact',
-    title: 'Contact',
   },
 ];
 
@@ -258,35 +254,6 @@ const experiences = [
     ],
   },
   {
-    title: 'Volunteer Software Engineer',
-    company_name: 'Better.sg',
-    icon: bettersg,
-    iconBg: '#FFFFFF',
-    date: 'Dec 2023 - May 2024',
-    points: [
-      'Working on the SayLah app, which is expected to be used by nearly 8000 users.',
-      'The app is meant to enable non-verbal users to communicate their feelings.',
-    ],
-    tags: [
-      {
-        name: 'Angular',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'MongoDB',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'Express.JS',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'Node.JS',
-        color: 'orange-text-gradient',
-      },
-    ],
-  },
-  {
     title: 'Software Engineering Intern',
     company_name: 'Transcelestial',
     icon: transcelestial,
@@ -309,6 +276,40 @@ const experiences = [
       {
         name: 'Go',
         color: 'orange-text-gradient',
+      },
+    ],
+  },
+  {
+    title: 'Software Engineering Intern',
+    company_name: 'Credit Agricole Corporate Investment Bank',
+    icon: creditagricole,
+    iconBg: '#FFFFFF',
+    date: 'January 2024 - May 2024',
+    points: [
+      'Collaborated with a team to migrate the codebase from Spring Boot to Rust, optimizing performance and reducing memory usage.',
+      'Actively participated in code reviews and testing processes, ensuring the quality and stability of the migrated code.',
+      'Resolved technical challenges with innovative solutions, showcasing strong problem-solving abilities.',
+      'Continuously updated knowledge of emerging technologies and best practices to enhance project outcomes.',
+      'Built an automation framework using Java, MongoDB, and Angular to streamline communication between QA testers and developers.',
+      'Designed the framework with multiuser support and controlled file system access for collaborative use.',
+      'Ensured the frameworks scalability and performance, enabling efficient handling of large datasets without compromising speed.',
+    ],
+    tags: [
+      {
+        name: 'Java',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Rust',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'PostgreSQL',
+        color: 'orange-text-gradient',
+      },
+      {
+        name: 'MongoDB',
+        color: 'pink-text-gradient',
       },
     ],
   },
