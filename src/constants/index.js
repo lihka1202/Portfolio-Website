@@ -38,7 +38,8 @@ import {
   meta,
   udemy,
   uci,
-  creditagricole
+  creditagricole,
+  ampol
 } from '../assets';
 
 export const navLinks = [
@@ -284,7 +285,7 @@ const experiences = [
     company_name: 'Credit Agricole Corporate Investment Bank',
     icon: creditagricole,
     iconBg: '#FFFFFF',
-    date: 'January 2024 - May 2024',
+    date: 'July 2024 - December 2024',
     points: [
       'Collaborated with a team to migrate the codebase from Spring Boot to Rust, optimizing performance and reducing memory usage.',
       'Actively participated in code reviews and testing processes, ensuring the quality and stability of the migrated code.',
@@ -309,6 +310,38 @@ const experiences = [
       },
       {
         name: 'MongoDB',
+        color: 'pink-text-gradient',
+      },
+    ],
+  },
+  {
+    title: 'Data Engineering Intern',
+    company_name: 'Ampol',
+    icon: ampol,
+    iconBg: '#FFFFFF',
+    date: 'January 2025 - June 2025',
+    points: [
+      'Designed and implemented post-trade data architecture to enhance data processing efficiency.',
+      'Built and optimized ETL pipelines using Dataiku and Snowflake for scalable data workflows.',
+      'Reengineered low-performance data warehouses, leveraging Snowflake transformations to improve query speed and storage efficiency.',
+      'Automated the detection and recovery of missing data lost during migration from Excel to Snowflake, ensuring data integrity',
+      'Developed a Selenium-based web scraper to collect shipping data from public sources, enabling an in-house dashboard.',
+    ],
+    tags: [
+      {
+        name: 'Dataiku',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Snowflake',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'SQL',
+        color: 'orange-text-gradient',
+      },
+      {
+        name: 'Selenium',
         color: 'pink-text-gradient',
       },
     ],

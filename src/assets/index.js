@@ -36,6 +36,7 @@ import followtrade from './company/followtrade.png';
 import transcelestial from './company/transcelestial.png';
 import bettersg from './company/bettersg.png';
 import creditagricole from './company/creditagricole.png';
+import ampol from './company/ampol.svg';
 
 //! Project Logos
 import timerChromeExtension from './TimerChromeExtension.png';
@@ -93,5 +94,6 @@ export {
   meta,
   udemy,
   uci,
-  creditagricole
+  creditagricole,
+  ampol
 };
