@@ -53,8 +53,8 @@ function About() {
       >
         Welcome to my corner of the internet! I&apos;m a driven computing
         student at the National University of Singapore, deeply immersed in the
-        world of technology and innovation. Currently interning at an emerging
-        startup, Transcelestial, I&apos;m honing my skills in software
+        world of technology and innovation. Currently interning at an oil and gas
+        company, Ampol, I&apos;m honing my skills in software
         engineering, testing infrastructure, and full-stack app development.
         Join me on this journey as I navigate through the dynamic realm of tech
         and embrace new challenges and opportunities along the way.
